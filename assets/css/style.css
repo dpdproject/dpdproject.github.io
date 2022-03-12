@@ -1,11 +1,19 @@
-/* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { ... }
+/* navbar */
 
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { ... }
+.nav-underscore .nav-link {
+    color: rgba(56, 56, 56, 0.5);
+    border-bottom: 2px solid transparent;
+    margin-left: 30px;
+  }
+.nav-underscore .nav-link:hover,
+.nav-underscore .nav-link:focus {
+    border-bottom-color: rgba(56, 56, 56, 0.5);
+}
+.nav-underscore .active {
+    border-bottom-color: rgb(68, 63, 100);
+}
 
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { ... }
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { ... }
+.cover-style {
+    min-height: 1100px;
+    background-color: blanchedalmond;
+}
