@@ -1,5 +1,26 @@
-/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.cover-style {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-image: url(assets/img/cover-background.jpg);
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 35px;
+}
 .nav-underscore .nav-link {
     color: rgba(56, 56, 56, 0.5);
     border-bottom: 2px solid transparent;
@@ -13,7 +34,4 @@
     border-bottom-color: rgb(68, 63, 100);
 }
 
-.cover-style {
-    min-height: 1100px;
-    background-color: blanchedalmond;
-}
+/* End of navbar */
