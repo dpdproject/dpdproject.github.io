@@ -7,11 +7,15 @@
 }
 
 body {
-    font-family: "Comfortaa", cursive;
+    font-family: "Comfortaa", sans-serif;
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 400;
+}
+
+.name {
+    font-weight: 500;
 }
 
 .name::first-letter {
@@ -30,6 +34,7 @@ h1 {
 
 .navbar {
     padding: 35px;
+    background-color: white;
 }
 .nav-underscore .nav-link {
     color: rgba(56, 56, 56, 0.5);
@@ -45,3 +50,28 @@ h1 {
 }
 
 /* End of navbar */
+
+/* About */
+
+.presentation-pic {
+    border-radius: 15px;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+}
+
+.presentation-text {
+    border-radius: 15px;
+    background-color: rgb(149, 138, 167);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(224, 215, 235, 0.5);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    opacity: 0.7;
+}
+
+/* End of about */
