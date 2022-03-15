@@ -9,28 +9,25 @@
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-
         <!-- Cover -->
-        <section class="container-fluid cover-style">
-            <main class="container">
-                <div class="row">
-                    <h1>Hello there,</h1>
-                    <h1>this is</h1>
-                    <h1 class="display-1 mb-5">dpd studio</h1>
-                    <p> This is my site.</p>
-                    <div class="arrow">
-                        <svg" xmlns="http://www.w3.org/2000/svg" width="316" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </div>
-                </div>
-            </main>
-        </section>
+        <div style="background-image: url('assets/img/network_01.jpg'); height: 100hv;" id="#Home">
+            <div class="mask" style="background-color: rgb(255, 255, 255, 0.2);">
+                <section class="container-fluid cover-style">
+                    <main class="container col-sm-12 d-flex">
+                        <div class="row justify-content-center align-items-center text-white">
+                            <h1>Hello there,</h1>
+                            <h1>this is</h1>
+                            <h1 class="name display-1 mb-5">David Piredda</h1>
+                            <p> This is my site.</p>
+                        </div>
+                    </main>
+                </section>
+            </div>
+        </div>
         <!-- End of cover -->
 
         <!-- Navbar -->
-        <header class="navbar navbar-expand-md navbar-light sticky-top";>
+        <nav class="navbar navbar-expand-md navbar-light sticky-top";>
             <div class="container-fluid">
                 <a class="navbar-brand h1">dpd studio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01">
@@ -39,13 +36,13 @@
                 <div class="collapse navbar-collapse text-center" id="navbarToggler01">
                     <ul class="navbar-nav ms-auto mb-4 mb-lg-3 nav-underscore">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="true" href="#">Home</a>
+                            <a class="nav-link active" aria-current="true" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -53,10 +50,13 @@
                     </ul>
                 </div>
             </div> 
-        </header>
+        </nav>
         <!-- End of navbar -->
 
         <!-- About section -->
+        <div>
+
+        </div>
         
 
         <!-- Projects section -->
@@ -70,9 +70,10 @@
             <footer class="py-3 my-2">
                 <div class="nav border-bottom justify-content-between">
                     <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >Work</a></li>
+                        <li class="nav-item"><a href="#Home" class="nav-link px-3 text-muted" >Home</a></li>
+                        <li class="nav-item"><a href="#About" class="nav-link px-3 text-muted" >About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >Projects</a></li>
                         <li class="nav-item"><a href="#" class="nav-link px-3 text-muted" >Contact</a></li>
                     </ul>
                     <ul>
