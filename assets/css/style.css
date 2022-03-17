@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+:root {
+    /* Font and typography */
+    --body-font: 'Comfortaa', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .9rem;
+}
 
 * {
     padding: 0;
@@ -7,28 +19,42 @@
 }
 
 body {
-    font-family: "Comfortaa", sans-serif;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 
-h1 {
-    font-weight: 400;
+ul {
+    list-style: none;
 }
 
-.name {
-    font-weight: 500;
+a {
+    text-decoration: none;
 }
 
-.name::first-letter {
-    color: crimson;
-}
+/* Cover */
 
-.cover-style {
+.cover_section {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.start {
+    max-width: 20%;
+    background-color: rgb(209, 255, 212, 0.4);
+    backdrop-filter: blur(40px);
+    border: 1px solid rga(255, 255, 255, 0.5);
+}
+.start:hover,
+.start:focus {
+    background-color: rgb(209, 255, 212, 0.2);
+}
+.start:active {
+    background-color: rgb(209, 255, 212, 0.4);  
+}
+/* End of cover */
 
 /* Navbar */
 
@@ -52,26 +78,69 @@ h1 {
 /* End of navbar */
 
 /* About */
-
-.presentation-pic {
-    border-radius: 15px;
-    position: absolute;
-    top: 70px;
-    left: 400px;
+.presentation_story {
+    border: none;
 }
 
-.presentation-text {
-    border-radius: 15px;
-    background-color: rgb(149, 138, 167);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(224, 215, 235, 0.5);
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-    width: 400px;
-    position: absolute;
-    top: 400px;
-    left: 100px;
-    opacity: 0.7;
+@media (max-width:1299.98px) {
+    .about_section {
+        min-height: 100vh;
+    }
+    .presentation_photo {
+        width: 75%;
+    }
+    .img_presentation {
+        border-radius: 15px;
+    }
+    .presentation_text {
+        min-width: 400px;
+    }
+    .presentation_story {
+        min-width: 400px;
+    }
+    .card_section {
+        margin-top: 30px;
+    }
+    .card_body {
+        padding: 30px;
+    }
+}
+
+@media (min-width:1299.98px) {
+    .about_section {
+        position: relative;
+        min-height: 100vh;
+    }
+    .presentation_photo {
+        width: 75%;
+        position: absolute;
+        top: 250px;
+        left: 450px;
+        z-index: -1;
+    }
+    .img_presentation {
+        border-radius: 15px;
+    }
+    .presentation_text {
+        max-width: 500px;
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        z-index: 1;
+    }
+    .card_body {
+        padding: 30px;
+    }
+    .presentation_story {
+        min-width: 400px;
+        position: absolute;
+        top: 700px;
+        left: 150px;
+    }
 }
 
 /* End of about */
+
+/* Services */
+
+/* End of services */
