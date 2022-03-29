@@ -339,6 +339,12 @@ header {
     width: 700px;
 }
 
+@media (max-width:900px) {
+    .services_section {
+        height: 100%;
+    }
+}
+
 @media (max-width:1299.98px) {
     .services_section {
         height: 80vh;
