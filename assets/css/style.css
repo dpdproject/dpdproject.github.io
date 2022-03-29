@@ -275,7 +275,7 @@ header {
     }
     /* end of qualification */
 
-@media (min-width:1299.98px) {
+@media (min-width:1200px) {
     .about_section {
         height: 150vh;
     }
@@ -323,7 +323,7 @@ header {
         to bottom right,
         rgba(128, 164, 203, 0.9),
         rgba(204, 224, 243, 0.2));
-    height: 70vh;
+    height: 100vh;
 }
 .services_container {
     display: flex;
