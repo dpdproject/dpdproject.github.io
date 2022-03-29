@@ -4,6 +4,7 @@
 :root {
     /* Font and typography */
     --body-font: 'Comfortaa', sans-serif;
+    --body-font-color: #303030;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
     --h1-font-size: 2.5rem;
@@ -35,6 +36,7 @@
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    color: var(--body-font-color);
 }
 
 h1 {
@@ -71,6 +73,38 @@ a:active {
 }
 .letters {
     color: var(--active-link-color);
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.button01 {
+    background-color: rgba(232, 112, 74, 0.8);
+    box-shadow: var(--shadow-card);
+    -webkit-backdrop-filter: blur(0.4rem);
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 10px;
+}
+.button01:hover,
+.button01:focus {
+    background-color: var(--focus-link-color);
+}
+.button01:active {
+    background-color: var(--active-link-color);
+}
+.a_button {
+    border-bottom: none;
+    display: flex;
+    margin-top: 1.5rem;
+}
+.a_button:hover,
+.a_button:focus {
+    color: rgb(0, 0, 0);
 }
 /* End of general styling */
 
@@ -109,6 +143,10 @@ header {
     justify-content: end;
     text-align: end;
 }
+.a_button {
+    display: flex;
+    justify-content: end;
+}
 
 @media (max-width:990px) {
     .cover_section {
@@ -120,6 +158,10 @@ header {
     .cover_subtitle {
         justify-content: center;
         text-align: center;
+    }
+    .a_button {
+        display: flex;
+        justify-content: center;
     }
 }
 /* End of cover */
